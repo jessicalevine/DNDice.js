@@ -1,7 +1,7 @@
 var num = 0;
 
 $(document).ready(function() {
-    $("#value").keyup(function(ev){
+    $("#statement").keyup(function(ev){
         if(ev.keyCode == 13){
             create_dice();
         }
@@ -15,19 +15,19 @@ $(document).ready(function() {
 function create_dice() {
     var roll = {
         name: document.getElementById("name").value,
-        value: document.getElementById("value").value,
+        statement: document.getElementById("statement").value,
         rolls: 0
     };
-    if(!roll.name || !roll.value) {
+    if(!roll.statement || !roll.statement) {
         alert("Please complete the required fields");
         return;
     }
     
-    roll.dice = parse_dice(roll.value);
+    roll.dice = parse_dice(roll.statement);
     
     num += 1;    
   
-    var text = num + ". " + roll.name + " (" + roll.dice.num + "d" + roll.dice.size + ") : ";
+    var text = num + ". " + roll.name + " (" + roll.statement + ") : ";
     var text_node = document.createTextNode(text);
     
     var roll_node = document.createElement("input");
@@ -51,8 +51,8 @@ function create_dice() {
     });
 }
 
-function parse_dice(value) {
-    var values = value.split("d");
+function parse_dice(statement) {
+    var values = statement.split("d");
     return {
         num: parseInt(values[0], 10),
         size: parseInt(values[1], 10)

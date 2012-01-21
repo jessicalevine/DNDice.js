@@ -6,17 +6,17 @@ var dndice = (function() {
         $(document).ready(function() {
             $("#statement").keyup(function (ev) {
                 if(ev.keyCode == 13){
-                    handle();
+                    handle_creation();
                 }
             });   
             
             $("#submit").click(function () {
-                handle();
+                handle_creation();
             });
         });
     }; //Actions taken on app initialization
     
-    var handle = function () {
+    var handle_creation = function () {
         var roll = init_roll(document.getElementById("name").value, document.getElementById("statement").value); //Create a roll object from DOM data
         
         if (!roll.valid) {

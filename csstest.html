@@ -6,6 +6,7 @@
 <link rel="shortcut icon" href="http://faviconist.com/icons/c69d32bcff26233440428eeea3ddd645/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -16,18 +17,26 @@
 <div id="col1">
 
 <div id="header">
-<h1>D&Dice</h1>
+<h1>D<span class="amp"> & </span>Dice</h1>
 </div>
 
 <div id="input">
-Name: <input id="name">
-Statement (xdy): <input id="statement">
-<input type="button" id="submit" value="Create">
+<div id="textfields">
+<div class="textbox">Name <input class="textfield" id="name"></div>
+<br class="smallbreak">
+<div class="textbox">Statement <span class="gray">xdy</span> <input class="textfield" id="statement"></div>
+</div>
+<button id="submit">Create</button>
 </div>
 
 <div id="dice">
-<dicebutton id="die1"><div class="buttonName">Lorem</div><div class="buttonVal">10d6</div></dicebutton>
-<dicebutton id="die2"><div class="buttonName">Ipsum</div><div class="buttonVal">1d20)</div></dicebutton>
+<button class="die" id="die1"><div class="name">Lorem</div><div class="val">10d6</div></button>
+<button class="die" id="die2"><div class="name">Ipsum</div><div class="val">1d20</div></button>
+<button class="die" id="die3"><div class="name">Dolor</div><div class="val">10d6</div></button>
+<button class="die" id="die4"><div class="name">Sit</div><div class="val">1d20</div></button>
+<button class="die" id="die5"><div class="name">Amet</div><div class="val">10d6</div></button>
+<button class="die" id="die6"><div class="name">Conseceteur</div><div class="val">1d20</div></button>
+<button class="die" id="die7"><div class="name">Lorem</div><div class="val">10d6</div></button>
 </div>
 
 </div>
@@ -36,6 +45,20 @@ Statement (xdy): <input id="statement">
 
 <div id="output">
 
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
+<p>40</p>
+<p>16</p>
 <p>40</p>
 <p>16</p>
 

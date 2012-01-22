@@ -10,7 +10,11 @@ body {height: 100%:
 
 #content {height: 100%;
     width: 80%;
-    margin: auto;
+    margin: 0 px auto 0px auto;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    background-color: #c0c0c0;
+    border-radius: 1em;
 }
 
 #col1 {height:100%;
@@ -19,19 +23,68 @@ body {height: 100%:
     border-color: #000066;
 }
 
-#header {height: 20%;
+#header {height: 15%;
+    width: 95%;
+    margin: -2em auto 1.5em auto;
+    text-align: center;
+}
+
+h1 {font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 72pt;
+    line-height: .5em;
+}
+
+#input {height: 20%;
     width: 95%;
     margin: auto;
 }
 
-#input {height: 10%;
-    width: 95%;
-    margin: auto;
+#textfields {
+    width: 67%;
+    float: left;
+    height: 100%;
+    margin: auto .5em auto auto;
+    font-size: 20pt;
+    line-height: 1.5em;
 }
 
-#dice {height: 70%;
+.textbox {
+    margin: .1em auto 0px auto;
+}
+
+.smallbreak {
+    height: 0px;
+    margin-top: -1em;
+}
+
+.textfield {
+    padding: .2em 1em .2em 1em;
+    border-radius: 1em;
+    float: right;
+    border: 2px solid #999999;
+    font-size: 20pt;
+    width: 50%;
+    line-height: 1em;
+    outline: none;
+}
+
+#submit {
+    min-width: 1px;
+    font-size: 20pt;
+    float: left;
+    width: auto;
+    height: 50%;
+    margin: 1.2em .1em auto .1em;
+    border-radius: 1em;
+}
+
+.gray {color: #606060;}
+
+#dice {height: 55%;
     width: 95%;
     margin: auto;
+    text-align: center;
+    overflow-y: auto;
 }
 
 #col2 {height:100%;
@@ -40,12 +93,67 @@ body {height: 100%:
     border-color: #660000;
 }
 
-#output {height: 100%;
+#output {height: 95%;
     width: 95%;
-    margin: auto;
+    margin: 2.5% auto auto auto;
+    overflow-y: auto;
 }
 
 
-.button {
-    background-color: #000066;
+button {min-width: 25%;
+    margin: .5em .2em .5em .2em;
+    padding: .2em .5em .2em .5em;
+    background-color: #1548c4;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3366ff), to(#003399));
+    background-image: -webkit-linear-gradient(top, #3366ff, #003399);
+    background-image:    -moz-linear-gradient(top, #3366ff, #003399);
+    background-image:     -ms-linear-gradient(top, #3366ff, #003399);
+    background-image:      -o-linear-gradient(top, #3366ff, #003399);
+    border: 2px solid #003399;
+    color: #ffffff;
+    text-shadow: 0px 2px #5582ff, 0px -2px #002775;
+    border-radius: 1.5em;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #1548c4;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003399), to(#3366ff));
+    background-image: -webkit-linear-gradient(top, #003399, #3366ff);
+    background-image:    -moz-linear-gradient(top, #003399, #3366ff);
+    background-image:     -ms-linear-gradient(top, #003399, #3366ff);
+    background-image:      -o-linear-gradient(top, #003399, #3366ff);
+    text-shadow: 0px -2px #5582ff, 0px 2px #002775;
+}
+
+.name {
+    font-size: 30pt;
+}
+
+.val {
+    font-size: 20pt;
+}
+
+.amp {
+    color: transparent;
+    background-image: url(http://dl.dropbox.com/u/8323906/amersand.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+    overflow: visible;
+    vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(51, 102, 255,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,51,153,0.5);
 }

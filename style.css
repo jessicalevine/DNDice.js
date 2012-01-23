@@ -19,8 +19,7 @@ body {height: 100%:
 
 #col1 {height:100%;
     float: left;
-    width: 50%;
-    border-color: #000066;
+    width: 60%;
 }
 
 #header {height: 15%;
@@ -35,7 +34,7 @@ h1 {font-family: 'Vollkorn', Georgia, Times, serif;
 }
 
 #input {height: 20%;
-    width: 95%;
+    width: 79%;
     margin: auto;
 }
 
@@ -80,17 +79,18 @@ h1 {font-family: 'Vollkorn', Georgia, Times, serif;
 
 .gray {color: #606060;}
 
-#dice {height: 55%;
+#dice {height: 60%;
     width: 95%;
-    margin: auto;
+    margin: 2.5% auto auto auto;
     text-align: center;
     overflow-y: auto;
 }
 
 #col2 {height:100%;
     float: left;
-    width: 50%;
+    width: 40%;
     border-color: #660000;
+    text-align: center;
 }
 
 #output {height: 95%;
@@ -98,7 +98,6 @@ h1 {font-family: 'Vollkorn', Georgia, Times, serif;
     margin: 2.5% auto auto auto;
     overflow-y: auto;
 }
-
 
 button {min-width: 25%;
     margin: .5em .2em .5em .2em;
@@ -114,9 +113,11 @@ button {min-width: 25%;
     text-shadow: 0px 2px #5582ff, 0px -2px #002775;
     border-radius: 1.5em;
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    clear: right;
 }
 
 button:hover {
+    min-width: 95%
     background-color: #1548c4;
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003399), to(#3366ff));
     background-image: -webkit-linear-gradient(top, #003399, #3366ff);
